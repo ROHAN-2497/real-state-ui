@@ -67,6 +67,7 @@ a{
   .menuIcon{
       display: none;
       z-index: 999;
+      
 
       img{
         width: 36px;
@@ -75,7 +76,8 @@ a{
       }
 
       @include sm {
-        display: inline;
+        display: initial;
+      
       }
   }
 
