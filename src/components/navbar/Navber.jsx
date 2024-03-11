@@ -12,12 +12,12 @@ const Navber = () => {
         <a href="">Contact</a>
         <a href="">Agents</a>
       </div>
-      <div className="rigth">
+      <div className="right">
         <a href="">Sign in</a>
         <a href="" className="register">
           Sign up
         </a>
-        <div className="menuIcon">
+        {/* <div className="menuIcon">
           <img src="/menu.png" alt="" />
         </div>
         <div className="menu">
@@ -27,7 +27,7 @@ const Navber = () => {
           <a href="/">Agents</a>
           <a href="/">Sign In</a>
           <a href="/">Sign Up</a>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
