@@ -2,7 +2,10 @@ import "./SearchBar.scss";
 const SearchBar = () => {
   return (
     <div className="searchBar">
-      <div className="type"></div>
+      <div className="type">
+        <button className="">Buy</button>
+        <button className="">Rent</button>
+      </div>
       <form action="">
         <input type="text" name="location" placeholder="City Locaion" />
         <input
