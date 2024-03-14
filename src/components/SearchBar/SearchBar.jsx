@@ -2,7 +2,27 @@ import "./SearchBar.scss";
 const SearchBar = () => {
   return (
     <div className="searchBar">
-      <h1>Search Bar</h1>
+      <div className="type"></div>
+      <form action="">
+        <input type="text" name="location" placeholder="City Locaion" />
+        <input
+          type="text"
+          name="miniPrice"
+          min={0}
+          max={1000000}
+          placeholder="Mini Price"
+        />
+        <input
+          type="text"
+          name="location"
+          min={0}
+          max={1000000}
+          placeholder="City Locaion"
+        />
+        <button>
+          <img src="/search.png" alt="" />
+        </button>
+      </form>
     </div>
   );
 };
