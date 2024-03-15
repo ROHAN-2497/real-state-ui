@@ -1,9 +1,21 @@
+import { useState } from "react";
 import "./SearchBar.scss";
 const SearchBar = () => {
+  const [query, setQuery] = useState({
+    type: "buy",
+    location: "",
+    minPrice: 0,
+    maxPrice: 0,
+  });
+
+  const switchType = () => {};
+
   return (
     <div className="searchBar">
       <div className="type">
-        <button className="">Buy</button>
+        <button onClick={() => switchType("buy")} className="">
+          Buy
+        </button>
         <button className="">Rent</button>
       </div>
       <form action="">
