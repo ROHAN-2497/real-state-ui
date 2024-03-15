@@ -1,17 +1,17 @@
 import SearchBar from "../../components/SearchBar/SearchBar";
 import "./homePage.scss";
-const homePage = () => {
+
+function HomePage() {
   return (
     <div className="homePage">
       <div className="textContainer">
         <div className="wrapper">
-          <h1 className="title">Lorem ipsum dolor sit amet</h1>
+          <h1 className="title">Find Real Estate & Get Your Dream Place</h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Laborum, mollitia!
-            Illum aut repellat alias debitis aperiam inventore iusto incidunt
-            provident mollitia minima magnam earum optio, natus nobis distinctio
-            neque cumque!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+            explicabo suscipit cum eius, iure est nulla animi consequatur
+            facilis id pariatur fugit quos laudantium temporibus dolor ea
+            repellat provident impedit!
           </p>
           <SearchBar />
           <div className="boxes">
@@ -31,11 +31,10 @@ const homePage = () => {
         </div>
       </div>
       <div className="imgContainer">
-        {" "}
         <img src="/bg.png" alt="" />
       </div>
     </div>
   );
-};
+}
 
-export default homePage;
+export default HomePage;
