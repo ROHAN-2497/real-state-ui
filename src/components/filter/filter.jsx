@@ -1,3 +1,4 @@
+import "./filter.scss";
 const filter = () => {
   return (
     <div className="fliter">
@@ -28,6 +29,7 @@ const filter = () => {
         <div className="item">
           <label htmlFor="property">Property</label>
           <select name="property" id="property">
+            <option value="">any</option>
             <option value="apartment">Apartment</option>
             <option value="house">House</option>
             <option value="condo">Condo</option>
@@ -40,26 +42,16 @@ const filter = () => {
             type="number"
             name="minPrice"
             id="minPrice"
-            placeholder="City Location"
+            placeholder="any"
           />
         </div>
         <div className="item">
-          <label htmlFor="city">Location</label>
-          <input
-            type="text"
-            name="city"
-            id="city"
-            placeholder="City Location"
-          />
+          <label htmlFor="maxPrice">Max Price </label>
+          <input type="text" name="maxPrice" id="maxPrice" placeholder="any" />
         </div>
         <div className="item">
-          <label htmlFor="city">Location</label>
-          <input
-            type="text"
-            name="city"
-            id="city"
-            placeholder="City Location"
-          />
+          <label htmlFor="bedroom">Bedroom</label>
+          <input type="text" name="bedroom" id="bedroom" placeholder="any" />
         </div>
         <button>
           <img src="/search.png" alt="" />
