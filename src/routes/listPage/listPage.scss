@@ -6,6 +6,8 @@
     flex: 3;
     .wrapper {
       padding-right: 50px;
+      display: flex;
+      flex-direction: column;
     }
   }
   .mapContainer {
