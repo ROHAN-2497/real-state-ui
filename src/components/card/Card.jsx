@@ -2,7 +2,6 @@
 import { Link } from "react-router-dom";
 import "./card.scss";
 
-// eslint-disable-next-line react/prop-types
 const Card = ({ item }) => {
   return (
     <div className="card">
