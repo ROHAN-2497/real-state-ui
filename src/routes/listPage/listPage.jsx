@@ -14,7 +14,7 @@ const listPage = () => {
           ))}
         </div>
       </div>
-      <div className="mapContainer">Map</div>
+      <div className="mapContainer"></div>
     </div>
   );
 };
