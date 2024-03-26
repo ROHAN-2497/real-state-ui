@@ -15,8 +15,8 @@ const Singlepage = () => {
                   <img src="/pin.png" alt="" />
                   <span>{singlePostData.address}</span>
                 </div>
+                <div className="price">$ {singlePostData.price}</div>
               </div>
-              <div className="price">$ {singlePostData.price}</div>
               <div className="user">
                 <img src={userData.img} alt="" />
                 <span>{userData.name}</span>
