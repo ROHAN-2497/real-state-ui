@@ -11,8 +11,9 @@ const Slider = ({ images }) => {
           <img src={images[0]} alt="" />
         </div>
         <div className="arrow">
-          <img src="/arrow.png" alt="" />
+          <img src="/arrow.png" alt="" className="right" />
         </div>
+        <div className="close">X</div>
       </div>
       <div className="bigImage">
         <img src={images[0]} alt="" />
