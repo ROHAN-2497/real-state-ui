@@ -2,18 +2,33 @@
 import { useState } from "react";
 import "./slider.scss";
 const Slider = ({ images }) => {
-  const { inamgeIndex, setImageIndex } = useState(2);
+  const [imageIndex, setImageIndex] = useState(2);
+  const changeSlide = (direction) => {
+    if (direction === "left") {
+      if (imageIndex === 0) {
+        setImageIndex(imageIndex - 1);
+      } else {
+        setImageIndex(imageIndex - 1);
+      }
+    } else {
+      if (imageIndex === images.length - 1) {
+        setImageIndex(0);
+      } else {
+        setImageIndex(imageIndex + 1);
+      }
+    }
+  };
   return (
     <div className="slider">
-      {inamgeIndex !== null && (
+      {imageIndex !== null && (
         <div className="fullSlider">
-          <div className="arrow">
+          <div className="arrow" onClick={() => changeSlide("left")}>
             <img src="/arrow.png" alt="" />
           </div>
           <div className="imageContainer">
-            <img src={images[inamgeIndex]} alt="" />
+            <img src={images[imageIndex]} alt="" />
           </div>
-          <div className="arrow">
+          <div className="arrow" onClick={() => changeSlide("right")}>
             <img src="/arrow.png" alt="" className="right" />
           </div>
           <div className="close" onClick={() => setImageIndex(null)}>
@@ -26,7 +41,12 @@ const Slider = ({ images }) => {
       </div>
       <div className="smallImages">
         {images.slice(1).map((image, index) => (
-          <img src={images} alt="" key={index} />
+          <img
+            src={images}
+            alt=""
+            key={index}
+            onClick={() => setImageIndex(index + 1)}
+          />
         ))}
       </div>
     </div>
