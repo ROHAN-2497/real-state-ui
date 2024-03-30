@@ -27,7 +27,14 @@ const Singlepage = () => {
         </div>
       </div>
       <div className="features">
-        <div className="wrapper"></div>
+        <div className="wrapper">
+          <p className="title">General</p>
+          <div className="listvertical"></div>
+          <p className="title">Room Sizes</p>
+          <p className="title">Nearby Places</p>
+          <div className="listvertical"></div>
+          <p className="title">Location</p>
+        </div>
       </div>
     </div>
   );
