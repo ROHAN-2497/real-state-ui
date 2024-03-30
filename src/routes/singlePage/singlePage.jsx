@@ -30,9 +30,42 @@ const Singlepage = () => {
       <div className="features">
         <div className="wrapper">
           <p className="title">General</p>
-          <div className="listVertical"></div>
+          <div className="listVertical">
+            <div className="feature">
+              <img src="/utility.png" alt="" />
+              <div className="featureText">
+                <span>Utilities</span>
+                <p>Renter is responsible</p>
+              </div>
+            </div>
+            <div className="feature">
+              <img src="/pet.png" alt="" />
+              <div className="featureText">
+                <span>Pet Policy</span>
+                <p>Pets Allowed</p>
+              </div>
+            </div>
+            <div className="feature">
+              <img src="/fee.png" alt="" />
+              <div className="featureText">
+                <span>Property Fees</span>
+                <p>Must have 3x the rent in total household income</p>
+              </div>
+            </div>
+          </div>
           <p className="title">Room Sizes</p>
-          <div className="sizes"></div>
+          <div className="sizes">
+            <img src="/size.png" alt="" />
+            <span>80 sqft</span>
+          </div>
+          <div className="size">
+            <img src="/bed.png" alt="" />
+            <span>2 beds</span>
+          </div>
+          <div className="size">
+            <img src="/bath.png" alt="" />
+            <span>1 bathroom</span>
+          </div>
           <p className="title">Nearby Places</p>
           <div className="listHorizontal"></div>
           <p className="title">Location</p>
