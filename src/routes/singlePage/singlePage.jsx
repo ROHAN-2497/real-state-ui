@@ -1,6 +1,7 @@
 import "./singlepage.scss";
 import Slider from "../../components/slider/Slider";
 import { singlePostData, userData } from "../../lib/dummydata";
+import Map from "../../components/map/Map";
 const Singlepage = () => {
   return (
     <div className="singlePage">
@@ -29,11 +30,25 @@ const Singlepage = () => {
       <div className="features">
         <div className="wrapper">
           <p className="title">General</p>
-          <div className="listvertical"></div>
+          <div className="listVertical"></div>
           <p className="title">Room Sizes</p>
+          <div className="sizes"></div>
           <p className="title">Nearby Places</p>
-          <div className="listvertical"></div>
+          <div className="listHorizontal"></div>
           <p className="title">Location</p>
+          <div className="mapContainer">
+            <Map items={[singlePostData]} />
+          </div>
+          <div className="buttons">
+            <button>
+              <img src="/chat.png" alt="" />
+              Send a Message
+            </button>
+            <button>
+              <img src="/save.png" alt="" />
+              Save the Place
+            </button>
+          </div>
         </div>
       </div>
     </div>
