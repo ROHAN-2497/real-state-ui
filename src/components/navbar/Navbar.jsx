@@ -11,7 +11,7 @@ const Navber = () => {
           <img src="/public/logo.png" alt="" />
           <span>Rohan Dev</span>
         </a>
-        <a href="">Home</a>
+        <Link to="/">Home</Link>
         <a href="">About</a>
         <a href="">Contact</a>
         <a href="">Agents</a>
