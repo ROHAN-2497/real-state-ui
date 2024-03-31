@@ -7,14 +7,14 @@ const Navber = () => {
   return (
     <nav>
       <div className="left">
-        <a href="" className="logo">
+        <a href="/" className="logo">
           <img src="/public/logo.png" alt="" />
           <span>Rohan Dev</span>
         </a>
         <Link to="/">Home</Link>
-        <a href="">About</a>
-        <a href="">Contact</a>
-        <a href="">Agents</a>
+        <Link href="">About</Link>
+        <Link href="">Contact</Link>
+        <Link href="">Agents</Link>
       </div>
       <div className="right">
         {user ? (
