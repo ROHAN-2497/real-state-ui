@@ -1,6 +1,7 @@
+import "./profilePage.scss";
 const profilePage = () => {
   return (
-    <div>
+    <div className="profilePage">
       <div className="details">
         <div className="wrapper">
           <div className="title">
