@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import "./homePage.scss";
 
@@ -13,7 +14,10 @@ function HomePage() {
             facilis id pariatur fugit quos laudantium temporibus dolor ea
             repellat provident impedit!
           </p>
-          <SearchBar />
+          <Link to="/list">
+            {" "}
+            <SearchBar />
+          </Link>
           <div className="boxes">
             <div className="box">
               <h1>16+</h1>
