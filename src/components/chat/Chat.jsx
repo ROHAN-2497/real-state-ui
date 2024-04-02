@@ -72,7 +72,7 @@ const Chat = () => {
             </span>
           </div>
           <div className="center">
-            <div className="chatMessage">
+            <div className="chatMessage own">
               <p>Lorem ipsum dolor sit amet.</p>
               <span>1 hour ago</span>
             </div>
@@ -109,7 +109,11 @@ const Chat = () => {
               <span>1 hour ago</span>
             </div>
           </div>
-          <div className="bottom"></div>
+          <div className="bottom">
+            {" "}
+            <textarea></textarea>
+            <button>Send</button>
+          </div>
         </div>
       )}
     </div>
