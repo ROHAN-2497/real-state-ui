@@ -13,7 +13,6 @@ const Card = ({ item }) => {
           <Link to={`/${item.id}`}>{item.title}</Link>
         </h2>
         <p className="address">
-          e
           <img src="/pin.png" alt="" />
           <span>{item.address}</span>
         </p>
